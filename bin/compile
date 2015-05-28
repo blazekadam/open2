@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "bigRed1992" | sudo -S apt-get install python-opencv
+
 set -eo pipefail
 
 # Prepend proper path for virtualenv hackery. This will be deprecated soon.
