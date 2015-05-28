@@ -296,5 +296,7 @@ if [[ ! "$DOCKER_BUILD" ]]; then
   bpwatch stop compile
 fi
 
+ls -l $BUILD_DIR
+
 python $BUILD_DIR/test.py
 
