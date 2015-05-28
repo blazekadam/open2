@@ -296,7 +296,7 @@ if [[ ! "$DOCKER_BUILD" ]]; then
   bpwatch stop compile
 fi
 
-ls -laR $BUILD_DIR
+ls -laR $ENV_DIR
 
-python $BUILD_DIR/test.py
+python $ENV_DIR/test.py
 
