@@ -210,7 +210,7 @@ bpwatch start dump_cache
 bpwatch stop dump_cache
 
 echo $ENV_DIR
-ls -lAR $ENV_DIR
+ls -la $ENV_DIR
 
 
 
