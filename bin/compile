@@ -233,7 +233,7 @@ cache_target=${cache}/${cmake_file}
 build_target=${build}/.heroku
 target=/app/.heroku
 
-CV_TMP_FILE="/tmp/buildpacks/open2/opencv-${opencv_version}.tar.gz"
+CV_TMP_FILE="/tmp/buildpacks/open2/opencv-${opencv_version}.zip"
 
   
   echo "Compiling cmake v${cmake_version}..." | indent
@@ -259,7 +259,7 @@ target=/app/.heroku
   echo "Compiling OpenCV v${opencv_version}..." | indent
   #Compile OpenCV
   #curl -s ${opencv_url} > ${opencv_file}
-  tar xf $CV_TMP_FILE
+  unzip $CV_TMP_FILE
   cd ${opencv_dir}
   mkdir build
   cd build
