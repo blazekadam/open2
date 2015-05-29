@@ -253,6 +253,9 @@ cache_target=${cache}/${opencv_file}
 build_target=${build}/.heroku
 target=/app/.heroku
 
+$PATH=/app/.heroku/python/bin:$PATH
+
+echo $PATH
 
   echo "Compiling OpenCV v${opencv_version}..." | indent
   #Compile OpenCV
