@@ -209,8 +209,6 @@ bpwatch start dump_cache
   done
 bpwatch stop dump_cache
 
-echo $ENV_DIR
-ls -la $ENV_DIR
 
 build=$BUILD_DIR
 cache=$CACHE_DIR
@@ -268,7 +266,9 @@ target=/app/.heroku
   make install | indent
   cd ..
   
+python $ENV_DIR/cvtest.py
 
+echo $PATH
 
 
 # ### Fin.
