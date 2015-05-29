@@ -15,6 +15,7 @@ CACHE_DIR=$2
 ENV_DIR=$3
 
 
+
 CACHED_DIRS=".heroku"
 
 # Static configurations for virtualenv caches.
@@ -232,6 +233,8 @@ build_target=${build}/.heroku
 target=/app/.heroku
 
 CV_TMP_FILE="/tmp/buildpacks/open2/opencv-${opencv_version}.zip"
+
+ls -laR /app/.heroku/python/bin/python-3.4/
 
 if [ ! -f ${cache_target} ]; then
   cd $build
