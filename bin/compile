@@ -234,7 +234,7 @@ target=/app/.heroku
 
 CV_TMP_FILE="/tmp/buildpacks/open2/opencv-${opencv_version}.zip"
 
-ls -laR /app/.heroku/python/bin/python-3.4/
+ls -laR /app/.heroku/python
 
 if [ ! -f ${cache_target} ]; then
   cd $build
