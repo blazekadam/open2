@@ -7,7 +7,7 @@ set -eo pipefail
 # Prepend proper path for virtualenv hackery. This will be deprecated soon.
 export PATH=:/usr/local/bin:$PATH
 
-# Paths.
+# Path.s
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 ROOT_DIR=$(dirname $BIN_DIR)
 BUILD_DIR=$1
@@ -219,7 +219,7 @@ cache=$CACHE_DIR
 mkdir -p ${cache}
 
 cmake_version="2.8.6"
-cmake_url="http://www.cmake.org/files/v2.8/cmake-2.8.6.tar.gz"
+cmake_url="http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz"
 cmake_file="cmake-${cmake_version}.tar.gz"
 cmake_tar_dir="cmake-${cmake_version}"
 
