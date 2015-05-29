@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+uname -a
+
 set -eo pipefail
 
 # Prepend proper path for virtualenv hackery. This will be deprecated soon.
